@@ -5,4 +5,6 @@
 # if it thinks it is already running.
 rm -rf /run/httpd/*
 
+mkdir -p /var/log/httpd
+
 exec /usr/sbin/apachectl -D FOREGROUND
